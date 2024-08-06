@@ -1,0 +1,553 @@
+<html>
+
+<head>
+    <title>code craft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .main {
+            width: 100%;
+        }
+
+        .header {
+            width: 1400px;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+            margin: 0 auto; position: sticky;
+        }
+
+        .header-leftside {
+            width: 450px;
+        }
+
+        .header-leftside img {
+            width: 180px;
+        }
+
+        .header-rightside {
+            display: flex;
+            justify-content: space-around;
+            width: 750px;
+        }
+
+        .header-rightside ul {
+            display: flex;
+            justify-content: space-around;
+            width: 400px;
+            text-decoration: none;
+        }
+
+        .header-rightside ul li {
+            list-style: none;
+            color: black;
+            font-size: 18px;
+
+        }
+
+        .buttton-for-mmeting {
+            display: flex;
+            align-items: center;
+            width: 200px;
+        }
+
+        .buttton-for-mmeting button {
+            width: 150px;
+            height: 45px;
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+        }
+
+        .buttton-for-mmeting button:hover {
+            width: 150px;
+            height: 45px;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        .part1 {
+            margin: 0 auto;
+            width: 1400px;
+            text-align: center;
+        }
+
+        .part1 h1 {
+            font-size: 90px;
+            height: 50px;
+            color: 030211;
+        }
+
+        .part1 p {
+            color: 7C7C91;
+            font-size: 20px;
+        }
+
+        .part1 button {
+            background-color: black;
+            width: 120px;
+            height: 40px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            animation-duration: 1.5s;
+        }
+
+        .part1 button:hover {
+            background-color: white;
+            width: 120px;
+            height: 40px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+        .part2 {
+            padding-top: 50px;
+            margin: 0 auto;
+            width: 1400px;
+        }
+
+        .slider {
+            transform: translate3d(-1%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+            will-change: transform;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly;
+            height: 400px;
+        }
+
+        
+        .sliderimg1:hover{
+            height: 500px;
+            width: 300px;
+        }
+        .sliderimg2:hover{
+            height: 500px;
+            width: 300px;
+        }
+        .sliderimg3:hover{
+            height: 500px;
+            width: 300px;
+        }
+
+        .part3 {
+            width: 1400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .part3-left {
+            display: flex;
+        }
+
+        .part3-left-h2 {
+            background-color: black;
+            color: white;
+            width: 120px;
+            height: 45px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part3-left-h1 {
+            width: 120px;
+            height: 45px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part3-right p {
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 1.5;
+            width: 550px;
+        }
+
+        .part3-right button {
+            width: 160px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+        .part3-right button:hover {
+            width: 160px;
+            height: 60px;
+            border: 1px solid wheat;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+        .part4 {
+            width: 1400px;
+            height: 400px;
+            margin-top: 50px;
+            margin: 0 auto;
+        }
+
+        .part4 h2 {
+            width: 600px;
+            word-spacing: 15px;
+            letter-spacing: 10px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px
+        }
+
+        .part4 div {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .part4 div img {
+            height: 140px;
+            width: 180px;
+        }
+
+        .part5-wrap {
+            margin-top: 100px;
+            width: 1400px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .part5 {
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .part5-h1 {
+            font-size: 70px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .part5 div h2 {
+            letter-spacing: 5px;
+        }
+
+        .part6 {
+            width: 1400px;
+            background-color: 030211;
+            height: 1500px;
+            margin-top: 50px;
+            margin: 0 auto;
+        }
+
+        .part6-heading-div {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 100px;
+            margin-bottom: 0px;
+        }
+
+        .part6-h1-left {
+            font-size: 50px;
+            color: white;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .part6-h1-right {
+            font-size: 50px;
+            width: 130px;
+            color: white;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            background-color: white;
+            color: 030211;
+        }
+
+        .part6-second-h1 {
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            margin: 0px auto;
+            width: 150px;
+            color: 030211;
+            background-color: white;
+
+        }
+
+        .part6-section-area {
+            width: 1300px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        }
+
+        .part6-section-area div img {
+            height: 400px;
+            width: 350px;
+        }
+
+        .part6-section-area div {
+            width: 350px;
+        }
+
+        .part6-section-area div p {
+            width: 350px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .part6-section-area div h1 {
+            color: white;
+        }
+        .part7{
+            width: 1400px;
+            height: 300px;
+        }
+        .part7-main-area{
+            width: 1300;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .part7-left-part{
+            width: 45%;
+        }
+        .part7-left-part div input{
+            height: 40px;
+            width: 250px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+        .part7-left-part div button{
+            height: 40px;
+            width: 120px;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+        .part7-right-part{
+            width: 20%;
+        }
+        .part7-mid-part{
+            width: 20%;
+        }
+        .part7-mid-part ul {
+            list-style: none;
+        }
+        .part7-right-part ul {
+            list-style: none;
+        }
+        .part7-mid-part ul li{
+            font-size: 20px;
+        }
+        .part7-right-part ul li {
+            font-size: 20px;
+        }
+        .lastp{
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-leftside">
+                <img src="./logo.png" alt="wait">
+            </div>
+            <div class="header-rightside">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li> Projects</li>
+                    <li>services</li>
+                </ul>
+                <div class="buttton-for-mmeting"><button>Book a meating</button></div>
+
+            </div>
+        </div>
+        <div class="part1">
+            <h1 class="animate__animated animate__bounce ">Lets grow your brand</h1>
+            <P>We specialize in Branding, Website Development and Content Creatio</P>
+            <button class="animate__animated animate__bounce">Schedule Call </button>
+        </div>
+        <div class="part2">
+            <div class="slider">
+
+                <img class="sliderimg1" src="https://uploads-ssl.webflow.com/643e1c970c675476b3c477a7/645c28ff06c57d77f46976d7_8uxui.png"
+                    alt="">
+                <img class="sliderimg2" src="./slider2.png" alt="">
+                <img class="sliderimg3" src="./slider3.png" alt="">
+            </div>
+        </div>
+        <div class="part3">
+            <div class="part3-left">
+                <h1 class="part3-left-h1">What </h1>
+                <h1 class="part3-left-h2"> we do </h1>
+            </div>
+            <div class="part3-right">
+                <p>We specialize in Brand design, Web Development, and
+                    Content Creation. Which we consider to be the
+                    fundamentals to build your online presence.</p>
+                <button> See Our Process </button>
+            </div>
+        </div>
+        <div class="part4 ">
+            <h2>BRANDS WE WORK WITH</h2>
+            <div class="animate__animated animate__bounce">
+                <img  src="./part4a.png" alt="">
+                <img  src="./part4b.png" alt="">
+                <img  src="./part4c.png" alt="">
+            </div>
+            <div class="animate__animated animate__bounce">
+                <img src="./part4d.png" alt="">
+                <img  src="./part4e.png" alt="">
+                <img  src="./part4f.png" alt="">
+            </div>
+        </div>
+        <div class="part5-wrap">
+            <div class="part5  animate__animated animate__bounce">
+                <div>
+                    <h1 class="part5-h1">6
+                        <sup>+</sup>
+                    </h1>
+                    <h2>Years in Market</h2>
+                </div>
+                <div >
+                    <h1 class="part5-h1">100
+                        <sup>k</sup>
+                    </h1>
+                    <h2>Project done</h2>
+                </div>
+                <div >
+                    <h1 class="part5-h1">99
+                        <sup>%</sup>
+                    </h1>
+                    <h2>Top Feedbak</h2>
+                </div>
+                <div >
+                    <h1 class="part5-h1">1000
+                        <sup>+</sup>
+                    </h1>
+                    <h2>Cup of Coffee</h2>
+                </div>
+            </div>
+        </div>
+        <div class="part6">
+            <div class="part6-heading-div">
+                <h1 class="part6-h1-left">Take Your Business to the </h1>
+                <h1 class="part6-h1-right"> Next</h1>
+            </div>
+            <div>
+                <h1 class="part6-second-h1">Level</h1>
+            </div>
+            <div class="part6-section-area">
+                <div>
+                    <h1>Brand Design</h1>
+                    <img src="./part6a.png" alt="">
+                    <p>Brand design is a crucial aspect of building a successful business. It involves creating a
+                        unique visual identity for your
+                        company that sets it apart from the competition and resonates with your target audience.</p>
+                </div>
+                <div>
+                    <h1>Web Development</h1>
+                    <img src="./part6b.png" alt="">
+                    <p> We specialize in building responsive, fast-loading websites that are
+                        optimized for search engines and designed to convert visitors into customers. Whether you need a
+                        simple brochure website or a complex e-commerce platform,
+                        we have the expertise to deliver outstanding results.</p>
+                </div>
+                <div>
+                    <h1>Social Strategy</h1>
+                    <img src="./part6c.png" alt="">
+                    <p>Creating high-quality content is essential for building a strong online
+                        presence and engaging with your target audience. From blog posts and social media updates to
+                        video production.
+                        We will help you build your brand authority.</p>
+                </div>
+            </div>
+            <div class="part6-section-area">
+                <div>
+                    <h1>Brand Design</h1>
+                    <img src="https://uploads-ssl.webflow.com/643e1c970c675476b3c477a7/64502b555a1aaa7361031c28_PHOTO1.png"
+                        alt="">
+                    <p>Brand design is a crucial aspect of building a successful business. It involves creating a
+                        unique visual identity for your
+                        company that sets it apart from the competition and resonates with your target audience.</p>
+                </div>
+                <div>
+                    <h1>Web Development</h1>
+                    <img src="https://uploads-ssl.webflow.com/643e1c970c675476b3c477a7/6450305f66cb04749dfb738d_VIDEOGRAPHYlogo.png"
+                        alt="">
+                    <p> We specialize in building responsive, fast-loading websites that are
+                        optimized for search engines and designed to convert visitors into customers. Whether you need a
+                        simple brochure website or a complex e-commerce platform,
+                        we have the expertise to deliver outstanding results.</p>
+                </div>
+                <div>
+                    <h1>Social Strategy</h1>
+                    <img src="https://uploads-ssl.webflow.com/643e1c970c675476b3c477a7/64502b5564212bbc5e9021b0_motion.png"
+                        alt="">
+                    <p>Creating high-quality content is essential for building a strong online
+                        presence and engaging with your target audience. From blog posts and social media updates to
+                        video production.
+                        We will help you build your brand authority.</p>
+                </div>
+            </div>
+        </div>
+        <div class="part7">
+            <div class="part7-main-area">
+                <div class="part7-left-part">
+                    <div>
+                        <img src="./logo.png" alt="">
+                    </div>
+                    <p>Join our newsletter to stay up to date on features and releases.</p>
+                    <div>
+                        <input type="email" placeholder="Enter your email"/>
+                        <button>Submit</button>
+                    </div>
+                    <p class="lastp">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+                </div>
+                <div class="part7-mid-part">
+                    <h2>Company</h2>
+                    
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Projects</p>
+                    <p>Services</p>
+                 </div>
+                 <div class="part7-right-part">
+                    <h2>Follow us</h2>
+                    
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                        <p>Twitter</p>
+                        <p>LinkedIn</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>   
